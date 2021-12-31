@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/bgr_search"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <ImageView
+        android:id="@+id/imvMessThumb"
+        android:layout_width="27dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="2"
+        android:src="@drawable/image_mess1" />
+    <TextView
+        android:id="@+id/txtMessageName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="PEGASUS 38 FLYEASE “LIGHTING’"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito"/>
+
+    <Button
+        android:id="@+id/btnExplore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="@color/darkblue"
+        android:text="Explore"
+        android:textSize="9sp"
+        android:textColor="@color/white"
+        app:cornerRadius="100dp"
+        android:focusable="false"
+        tools:ignore="TouchTargetSizeCheck"
+        android:fontFamily="@font/nunito"/>
+
+</LinearLayout>

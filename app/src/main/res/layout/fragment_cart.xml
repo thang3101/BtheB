@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CartFragment"
+    android:clickable="true"
+    android:background="#F1F5F8">
+
+        <ImageView
+            android:id="@+id/imvClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/close"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imvDelete"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:src="@drawable/trash"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/txtMyCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="MY CART"
+            android:textColor="#031824"
+            android:fontFamily="@font/nunito"
+            android:textSize="5mm"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotal"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyCart"
+        app:layout_constraintVertical_bias="0.619"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvListCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtBlank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have nothing in your cart"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/nunito"
+
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imvTickAll"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/untick_cart"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheckout"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+            android:id="@+id/txtAllProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Product"
+            android:fontFamily="@font/nunito"
+            android:textColor="#031824"
+            android:textSize="3mm"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toRightOf="@+id/imvTickAll"
+            app:layout_constraintBottom_toTopOf="@+id/btnCheckout"/>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Total: 10$"
+            android:textColor="#031824"
+            android:textSize="24sp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/nunito"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnCheckout"/>
+
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgr_buttondark"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingVertical="10dp"
+        android:fontFamily="@font/nunito"
+        android:text="proceed to checkout"
+        android:textSize="16dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

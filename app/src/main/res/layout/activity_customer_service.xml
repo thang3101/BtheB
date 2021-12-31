@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerServiceActivity"
+    android:background="@drawable/backgr"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bgr_top"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imvBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer Service"
+            android:textSize="34sp"
+            android:textColor="@color/white2"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"/>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/lvCustomerService"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-80dp"
+        android:paddingHorizontal="20dp"
+        android:divider="@null"
+        android:dividerHeight="30dp"/>
+
+
+</LinearLayout>

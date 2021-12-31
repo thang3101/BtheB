@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:orientation="vertical"
+    android:background="#F1F5F8">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/bgr_top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="ACCOUNT"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="60dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-100dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:fontFamily="@font/nunito"
+            android:paddingLeft="30dp"
+            android:paddingBottom="10dp"
+            android:text="Log in to your account"
+            android:textColor="#031824"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtEmailSI"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bgr_white_20"
+            android:elevation="10dp"
+            android:fontFamily="@font/nunito"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="#031824"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtPassSI"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgr_white_20"
+            android:drawableRight="@drawable/hidden"
+            android:elevation="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:fontFamily="@font/nunito"
+            android:textColorHint="#031824"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgr_darkblue_large"
+            android:elevation="5dp"
+            android:text="SIGN IN"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nunito"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="@string/forgot_password"
+        android:paddingTop="10dp"
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or SignUp with"
+        android:textSize="16dp"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/darkblue"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo_google"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="40dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_facebook"
+            android:layout_marginRight="40dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/logo_apple"/>
+    </LinearLayout>
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:textColor="#7C031824"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/create_new_acc_button"
+        android:elevation="5dp"
+        android:text="CREATE NEW ACCOUNT"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"
+        app:cornerRadius="300dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white2"
+    tools:context=".AllSports">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/darkblue"
+            >
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/back_white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/bgr_white_20"
+                android:drawableLeft="@drawable/search_32x32"
+                android:fontFamily="@font/nunito"
+                android:focusableInTouchMode="false"
+                android:hint="Search..."
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="550dp"
+                        android:src="@drawable/sport_banner1"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <Button
+                        android:id="@+id/btnShopNow"
+                        android:layout_width="200dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-120dp"
+                        android:fontFamily="@font/nunito"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/darkblue"
+                        android:text="SHOP NOW"
+                        android:textSize="22sp"
+                        app:cornerRadius="10dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The JD Sports Hub has all your sports related needs covered! No matter what the sport, we have the kits, equipments, clothing and accessories you need to take your skills to the next level!"
+                    android:padding="20dp"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center"/>
+                <GridView
+                    android:id="@+id/gvAllSports"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:numColumns="4"
+                    android:horizontalSpacing="10dp"
+                    android:paddingHorizontal="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:src="@drawable/sport_banner2"
+                        android:scaleType="centerCrop"/>
+
+                    <Button
+                        android:id="@+id/btnOpenShop"
+                        android:layout_width="200dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-100dp"
+                        android:fontFamily="@font/nunito"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/darkblue"
+                        android:text="SHOP NOW"
+                        android:textSize="22sp"
+                        app:cornerRadius="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>
+

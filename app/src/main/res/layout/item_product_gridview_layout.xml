@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:background="@drawable/button_quickbuy"
+    android:orientation="vertical"
+    android:padding="10dp">
+        <ImageView
+            android:id="@+id/imvThumb"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:src="@drawable/shoes2"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Converse"
+            android:textSize="12sp"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/nunito"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="$70"
+                android:fontFamily="@font/nunito"
+                android:textSize="15sp"
+                android:textColor="@color/darkblue"/>
+
+            <Button
+                android:focusable="false"
+                android:id="@+id/btnQuickBuy"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="4"
+                android:background="@drawable/bgr_white_20"
+                android:text="quick buy"
+                android:elevation="10dp"
+                android:fontFamily="@font/nunito"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+</LinearLayout>

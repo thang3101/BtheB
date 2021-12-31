@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imvBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="-20dp"
+        android:text="FORGOT YOUR PASSWORD"
+        android:textColor="@color/darkblue"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/nunito"
+
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bgr_white_20"
+            android:elevation="10dp"
+            android:hint="Your name"
+            android:fontFamily="@font/nunito"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="#031824"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgr_white_20"
+            android:elevation="10dp"
+            android:fontFamily="@font/nunito"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColorHint="#031824"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgr_white_20"
+            android:elevation="10dp"
+            android:hint="Phone Number"
+            android:paddingLeft="10dp"
+            android:inputType="number"
+            android:fontFamily="@font/nunito"
+            android:paddingRight="10dp"
+            android:textColorHint="#031824"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgr_white_20"
+            android:elevation="10dp"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="#031824"
+            android:fontFamily="@font/nunito"
+            android:textSize="18sp"
+            android:paddingBottom="10dp"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnResetPW"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgr_darkblue_large"
+        android:elevation="5dp"
+        android:text="RESET PASSWORD"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="bottom|center_horizontal"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="10dp"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+</LinearLayout>

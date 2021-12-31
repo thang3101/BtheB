@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.HomeFragment"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:background="@color/white2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1800dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="FREE STANDARD DELIVERY"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/nunito"
+                />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <Button
+                android:id="@+id/btnOpenShop"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-120dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/darkblue"
+                android:text="SHOP NOW"
+                android:textSize="22sp"
+                app:cornerRadius="10dp"
+                android:fontFamily="@font/nunito"/>
+
+            <me.relex.circleindicator.CircleIndicator
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/circleIndicator"
+                android:layout_gravity="center_horizontal"
+                android:padding="3dip"/>
+
+        </LinearLayout>//banner slider
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llShopAll"
+                android:layout_marginRight="27dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/shopall"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop All"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llVoucher"
+                android:layout_marginRight="27dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/voucher_ic"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voucher"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/llSaleOff"
+                android:layout_marginRight="27dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/saleoff"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sale off"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/llBestSeller"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bestseller"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best seller"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+        </LinearLayout>// 4 function
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SHOPPING BY CATEGORY"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/nunito"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="380dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="340dp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="138dp"
+                    android:src="@drawable/hightops" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High tops"
+                    android:textColor="@color/darkblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/nunito"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="138dp"
+                    android:src="@drawable/lowtops"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low tops"
+                    android:textColor="@color/darkblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="-10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="320dp"
+                    android:src="@drawable/slipon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slip on"
+                    android:textColor="@color/darkblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LAST ITEMS"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunito"
+            />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:padding="20dp"
+            android:layout_marginTop="-40dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/banner_lastitem"
+                />
+            <Button
+                android:id="@+id/btnOpenLastItem"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="@color/darkblue"
+                android:text="SHOP NOW"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:cornerRadius="10dp"
+                android:fontFamily="@font/nunito"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BY SEX"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="-25dp"
+            android:fontFamily="@font/nunito"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/men"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Men"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/women"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Women"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kid"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kid"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BRANDS"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito"/>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:id="@+id/grvBrands"
+            android:numColumns="2"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>
+

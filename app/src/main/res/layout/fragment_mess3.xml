@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Mess3Fragment"
+    android:orientation="vertical"
+    android:background="@color/white2"
+    android:clickable="true"
+    android:paddingHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Message"
+                android:textSize="28sp"
+                android:textColor="@color/darkblue"
+                android:gravity="center"
+                android:layout_marginLeft="-40dp"
+                android:fontFamily="@font/nunito"
+                />
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="371dp"
+                android:layout_height="197dp"
+                android:src="@drawable/mess3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WE'-VE COUPLED UP"
+                android:textStyle="bold"
+                android:textColor="@color/darkblue"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="It's official ! We've linked up with Love Island's
+Chloe Burrows and she's the first ever face of JD Women!
+
+You'll all know Chloe from this year's Love
+Island line - up.  She's funny , infectious and all
+about the positive vibes ! Not stopping there ,
+this gal knows her stuff when it comes to the
+latest trends and what to be seen in. From chill
+day looks to the latest trainers that she's obsessin ' over , she's
+the ultimate go - to for style inspo "
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/nunito"
+
+                />
+            <Button
+                android:id="@+id/btnShopNowMess3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/darkblue"
+                android:text="SHOP NOW"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="140dp"
+                android:shadowColor="#252222"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

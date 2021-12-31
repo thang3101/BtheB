@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imvSport"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/baseball"/>
+    <TextView
+        android:id="@+id/txtSportName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Baseball"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/nunito"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="250dp"
+    android:background="@drawable/bgr_white2_20"
+    android:layout_margin="16dp"
+    android:layout_gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by:"
+        android:textColor="#031824"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:paddingTop="20dp"
+        android:fontFamily="@font/nunito"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recommended"
+        android:textColor="#031824"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunito"
+        android:textSize="24dp"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:drawableRight="@drawable/tick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name (A-Z)"
+        android:textColor="#031824"
+        android:textSize="24dp"
+        android:layout_gravity="left"
+        android:fontFamily="@font/nunito"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name (Z-A)"
+        android:textColor="#031824"
+        android:textSize="24dp"
+        android:layout_gravity="left"
+        android:fontFamily="@font/nunito"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="#031824"
+        android:textSize="24dp"
+        android:fontFamily="@font/nunito"
+        android:layout_gravity="left"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgr_white_20"
+    android:padding="10dp"
+    android:elevation="10dp">
+    <TextView
+        android:id="@+id/txtTitle_PMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash On Delivery"
+        android:textColor="@color/darkblue"
+        android:textSize="21sp"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtDescripPMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/nunito"
+        android:text="Pay when you receive"
+        android:layout_marginTop="45dp"/>
+
+    <ImageView
+        android:id="@+id/imvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shapepaymentmethod"
+        android:layout_gravity="right"/>
+
+    <ImageView
+        android:id="@+id/imvThumb_PMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cod"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"/>
+
+</FrameLayout>

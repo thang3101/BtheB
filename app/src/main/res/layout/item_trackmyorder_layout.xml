@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/button_quickbuy"
+    android:padding="20dp"
+    android:weightSum="10"
+    >
+
+
+    <ImageView
+        android:id="@+id/imvThumb"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="3"
+        android:src="@android:drawable/presence_away" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nike Air Max"
+        android:textSize="20sp"
+        android:id="@+id/txtName"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="x1"
+        android:textSize="18sp"
+        android:id="@+id/txtQuantity"
+        android:textColor="@color/darkblue"
+        android:gravity="right"
+        android:fontFamily="@font/nunito"
+        />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$230"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtPrice"
+        android:layout_gravity="right"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/darkblue"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/nunito"
+            android:gravity="bottom"
+            android:text="Arrived"
+            android:textColor="@color/darkblue"
+            android:textSize="18sp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

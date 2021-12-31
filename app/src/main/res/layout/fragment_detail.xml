@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DetailFragment"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="#F1F5F8"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp">
+        <ImageView
+            android:id="@+id/imvBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/backblue"
+            />
+
+        <TextView
+        android:id="@+id/txtType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Men Shoes"
+        android:layout_marginTop="-35dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/darkblue"
+        android:textSize="30dp"
+            android:fontFamily="@font/nunito"
+         />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_quickbuy">
+
+        <ImageView
+            android:layout_width="206dp"
+            android:layout_height="200dp"
+            android:src="@drawable/pr5"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imvThumb"/>
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white2"
+            android:background="@drawable/bg_topleft_topright">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ultraboots Shoes"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:id="@+id/txtName"
+                android:paddingLeft="20dp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/nunito"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Men 's Running"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:id="@+id/txtDetailType"
+                android:paddingLeft="20dp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/nunito"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$180.00"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:id="@+id/txtPrice"
+                android:paddingLeft="20dp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/nunito"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select a size"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/darkblue"
+                    android:fontFamily="@font/nunito"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View size guide"
+                    android:textSize="20sp"
+                    android:gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/nunito"
+                    android:id="@+id/txtViewSizeGuide"/>
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="6"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detailInfoProduct1"
+                android:textSize="23sp"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/darkblue"
+                android:fontFamily="@font/nunito"/>
+
+
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:paddingBottom="20dp"
+                android:background="@drawable/add_to_cart"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:fontFamily="@font/nunito"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

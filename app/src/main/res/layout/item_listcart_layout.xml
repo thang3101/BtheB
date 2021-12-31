@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="5dp"
+    >
+    <ImageView
+        android:id="@+id/imvTickCart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:src="@drawable/untick_cart"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_quickbuy"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imvThumb_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/pr4" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="fdvdvd"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito"/>
+
+            <TextView
+                android:id="@+id/txtType_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fashion shoes"
+                android:textSize="14dp"
+                android:fontFamily="@font/nunito"/>
+
+            <TextView
+                android:id="@+id/txtPrice_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$170.00"
+                android:textSize="14dp"
+                android:fontFamily="@font/nunito"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgbtnSubtract"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/white2"
+                android:src="@drawable/subtract_item" />
+
+
+            <TextView
+                android:id="@+id/txtNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:fontFamily="@font/nunito"/>
+
+
+            <ImageButton
+                android:id="@+id/imgbtnAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/darkblue"
+                android:src="@drawable/add_item" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

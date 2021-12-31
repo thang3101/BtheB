@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="250dp"
+    android:background="@drawable/shape_corners_bottomdialog"
+    android:layout_margin="16dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANYTIME YOU NEED"
+        android:textColor="@color/darkblue"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito"
+        android:paddingTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOU CAN"
+        android:textColor="@color/darkblue"
+        android:textSize="16dp"
+        android:fontFamily="@font/nunito"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="CHAT WITH US"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bgr_white_20"
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_gravity="center"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="3dp"/>
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="GIVE US A CALL"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bgr_buttondark"
+        android:fontFamily="@font/nunito"
+        android:textSize="16dp"
+        android:textColor="@color/white"/>
+</LinearLayout>

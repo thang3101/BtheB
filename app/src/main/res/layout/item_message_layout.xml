@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:weightSum="10"
+    android:background="@drawable/corner_button_explore"
+    android:backgroundTint="@color/white2"
+    >
+    <ImageView
+        android:id="@+id/imvMessThumb"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="-30dp"
+        android:paddingRight="-30dp"
+        android:src="@drawable/image_mess1"
+        android:layout_weight="6.5"/>
+
+    <TextView
+        android:id="@+id/txtMessageName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="PEGASUS 38 FLYEASE
+“LIGHTING’"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/nunito"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/btnExplore"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="EXPLORE"
+        android:focusable="false"
+        android:layout_weight="1.5"
+        android:backgroundTint="@color/darkblue"
+        android:layout_gravity="end"
+        android:fontFamily="@font/nunito"
+        android:textColor="@color/white2"
+        android:background="@drawable/corner_button_explore"/>
+</LinearLayout>
